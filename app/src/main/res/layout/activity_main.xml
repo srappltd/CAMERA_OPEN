@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="50dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgCamera"
+            android:src="@drawable/edtbg"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:layout_width="20dp"
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:id="@+id/imgOpenCamera"
+            android:layout_gravity="end|bottom"/>
+    </androidx.cardview.widget.CardView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edtbg"
+            android:id="@+id/edtName"
+            android:paddingStart="10dp"
+            android:hint="Enter Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/edtbg"
+        android:layout_marginTop="5dp"
+        android:id="@+id/edtEmail"
+        android:paddingStart="10dp"
+        android:hint="Enter Email"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:backgroundTint="#FF5722"
+        android:id="@+id/btnSave"/>
+
+
+</LinearLayout>
